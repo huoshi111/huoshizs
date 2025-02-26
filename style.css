@@ -10,7 +10,7 @@
         }
         .chat-container {
             width: 90%;
-            max-width: 900px;
+            max-width: 1000px;
             background: rgb(83, 83, 83);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -46,9 +46,6 @@
             border-radius: 10px;
         }
         
-
-
-
 
 
         .chat-box p {
@@ -188,11 +185,11 @@
             top: 0;
             width: 100%;
             text-align: center;
-            background-color: #2e2e2ee2; /* 背景色让它更明显 */
-            color: #d4d4d4;
+            background-color: #343434a6; /* 背景色让它更明显 */
+            color: #b7b7b7;
             padding: 4px 0;
             margin: 0;
-            font-size: 20px;
+            font-size: 16px;
         }
 /* 录音*/
 #huoshisoundaudio-button {
