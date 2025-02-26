@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="火狮桃星">
+    <meta name="description" content="火狮智能助手 火狮 HUOSHI">
+    <link rel="stylesheet" href="style.css">
+    <title>火狮智能助手</title>
+</head>
+<body>
+<h1 style="color: #b4b4b4;"> <button id="unique-question-button-id1">⛭</button> 火狮智能助手</h1> 
+<br><br>
+<div class="chat-container">
+    <div class="chat-box" id="chat-box">
+        <p class="ai-message"><b>火狮智能助手：</b> 有什么可以帮忙的吗？ ヾ(^▽^*)</p>
+    </div>
+
+
+    <!-- 快捷按钮 -->
+    <center>
+        <button style="color: #b4b4b4; background-color: rgba(54, 54, 54, 0.493); width: 400px; border-radius: 10px; " id="toggle-button" onclick="toggleButtons()">隐藏内容</button>
+    </center>
+    <div class="button-container" id="button-container">
+        <h style="color: rgb(214, 214, 214);">您可能对这些话题感兴趣: </h>
+        <button style="background-color: #202020c3; color: white;" onclick="quickReply(this, '开启搜索功能')">搜索功能</button>
+        <button onclick="quickReply(this, '介绍一下你自己')">介绍</button>
+        <button onclick="quickReply(this, '火狮有哪些作品')">火狮的作品</button>
+        <button onclick="quickReply(this, '猜原神的角色新功能')">玩猜原神角色</button>
+        <button onclick="quickReply(this, '我需要帮助')">帮助</button>
+        <button onclick="quickReply(this, '如何反击网络上的键盘侠')">反击键盘侠</button> 
+        <button onclick="quickReply(this, '如何让攻击者破防')">让攻击者破防</button>
+        <button onclick="quickReply(this, '讲一下宇宙的起源')">关于宇宙的起源</button>
+        <button onclick="quickReply(this, '抖音的梗')">抖音很火的梗</button>
+        <button onclick="quickReply(this, '讲解一下世界的历史')">关于世界的历史</button>
+        <button onclick="quickReply(this, '我需要联系开发者')">联系</button>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="请输入...">
+        <button onclick="sendMessage()">➤ </button>
+        <center>
+        <button id="huoshisoundaudio-button" onclick="toggleVoiceInput()">🎤</button>
+        <button id="huoshisoundaudio-stop-button" onclick="stopVoiceInput()" style="display: none;">停止录音</button>
+        <button id="speak-button" onclick="speakMessage()">语音</button>
+        <button id="stop-voice-button" onclick="stopSpeaking()" style="display: none;">语音阅读中</button>
+    </center>
+    </div>
+
+
+    <center>
+        <p style="color: #b4b4b4;">火狮 桃星 HUOSHI © 2025 </p>
+
+    </center>
+</div>
+
+
+
+<!--设置内容-->
+
+<div id="unique-modal-overlay-id1">
+    <div id="unique-modal-id1">
+        <div class="category-buttons1">
+            <button class="category-btn1 active" data-target="content11">火狮 智能助手</button>
+            <button class="category-btn1" data-target="content21">介绍</button>
+            <button class="category-btn1" data-target="content31">功能</button>
+            <button class="category-btn1" data-target="content41">其它</button>
+        </div>
+
+
+        <div class="content-area1">
+            <button id="unique-close-button-id1">&times;</button>
+
+
+<!--网站介绍-->
+            <div id="content11" class="content1 active">
+                <br><br>
+                <center>
+                   <b style="color: rgb(210, 210, 210);">欢迎访问 火狮智能助手 网页</b>
+                </center>
+            </div>
+<!--安全说明-->
+
+            <div id="content21" class="content1">
+<br><br>
+<center>
+    <b style="color: #b4b4b4;"> 您可以和 火狮智能助手 聊一些简单的话题，科普和解决一些基础数学题。</b>
+</center>
+
+            </div>
+
+
+            <div id="content31" class="content1">
+                <center>
+                    <b style="color: #b4b4b4;"> 目前现在有 猜 原神角色的功能 您可以点击这里玩一下。</b>
+                </center>
+                <br><br>
+
+            <br><br>
+                <b style="color: #b4b4b4;">来自 火狮 桃星 HUOSHI 火狮智能助手 功能</b>
+            <br><br>
+    <button id="huoshiaicYuanshenOpenButton1"> 猜 原神角色 游戏</button>
+    <button id="huoshiaicYuanshenOpenButton2"> 迷宫大冒险 游戏</button>
+    <button id="huoshiaicYuanshenOpenButton3">3 功能</button>
+    <br><br><br><br>
+    <b style="color: #b4b4b4;">来自 哔哩哔哩 游戏</b>
+    <br><br>
+    <button id="huoshiaicYuanshenOpenButton4">原神抽卡模拟器</button>
+<!--功能按钮-->
+
+<div class="huoshiaic-yuanshen-overlay" id="huoshiaicYuanshenOverlay">
+    <div class="huoshiaic-yuanshen-iframe-container" id="huoshiaicYuanshenIframeContainer">
+        <iframe id="huoshiaicYuanshenIframe" class="huoshiaic-yuanshen-iframe" src=""></iframe>
+        <span class="huoshiaic-yuanshen-close-button" id="huoshiaicYuanshenCloseButton">×</span>
+    </div>
+</div>
+<!--功能按钮结束-->
+
+            </div>
+
+            <div id="content41" class="content1">
+
+                <br><br><br>
+<b style="color: #b4b4b4;">其他问题可以联系 火狮 HUOSHI，询问 火狮智能助手 联系作者，这样就能够联系作者啦。</b>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="huoshiailang.js"></script>
+<script src="script.js"></script>
+<script src="huoshilangint.js"></script>
+
+<!--猜角色功能-->
+<script src="1huoshiiframeyuanshen.js"></script>
+<!--左上角的设置按钮-->
+<script src="contenttypehuoshiai设置内容.js"></script>
+
+
+
+
+
+</body>
+</html>
