@@ -7,10 +7,11 @@ const closeButton = document.getElementById('huoshiaicYuanshenCloseButton');
 const iframeSources = {
     huoshiaicYuanshenOpenButton1: "https://huoshi111.github.io/huoshiaicyuanshen/1%E7%8C%9C%E5%8E%9F%E7%A5%9E%E8%A7%92%E8%89%B2.html",
     huoshiaicYuanshenOpenButton2: "https://huoshi111.github.io/huoshigame0/%E7%81%AB%E7%8B%AE%E8%BF%B7%E5%AE%AB%E6%B8%B8%E6%88%8F.html",
-    huoshiaicYuanshenOpenButton3: "https://huoshi111.github.io/huoshiyinyue001/%E7%81%AB%E7%8B%AE%E9%9F%B3%E4%B9%90v.5.0.html",
-    huoshiaicYuanshenOpenButton4: "https://huoshi111.github.io/huoshiwall/huoshiwallpaper.html",
+    huoshiaicYuanshenOpenButton3: "https://huoshi111.github.io/huoshigamezstictactoe/Tic%20tac%20toe%E7%81%AB%E7%8B%AE%E6%B8%B8%E6%88%8F.html",
+    huoshiaicYuanshenOpenButton4: "https://huoshi111.github.io/huoshiyinyue001/%E7%81%AB%E7%8B%AE%E9%9F%B3%E4%B9%90v.5.0.html",
+    huoshiaicYuanshenOpenButton5: "https://huoshi111.github.io/huoshiwall/huoshiwallpaper.html",
     // 哔哩哔哩
-    huoshiaicYuanshenOpenButton5: "https://tools-wiki.biligame.com/ys/simulator/dist/wish"
+    huoshiaicYuanshenOpenButton6: "https://tools-wiki.biligame.com/ys/simulator/dist/wish"
 };
 
 // 绑定按钮点击事件
@@ -35,4 +36,3 @@ closeButton.addEventListener('click', function() {
         overlay.style.display = 'none';
     }, 500);
 });
-
