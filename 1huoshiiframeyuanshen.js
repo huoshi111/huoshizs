@@ -11,7 +11,9 @@ const iframeSources = {
     huoshiaicYuanshenOpenButton4: "https://huoshi111.github.io/huoshiyinyue001/%E7%81%AB%E7%8B%AE%E9%9F%B3%E4%B9%90v.5.0.html",
     huoshiaicYuanshenOpenButton5: "https://huoshi111.github.io/huoshiwall/huoshiwallpaper.html",
     // 哔哩哔哩
-    huoshiaicYuanshenOpenButton6: "https://tools-wiki.biligame.com/ys/simulator/dist/wish"
+    huoshiaicYuanshenOpenButton6: "https://tools-wiki.biligame.com/ys/simulator/dist/wish",
+    //火狮 宇宙星空
+    huoshiaicYuanshenOpenButton7: "https://huoshi111.github.io/huoshistarskyhs11/%E7%81%AB%E7%8B%AE%20%E5%AE%87%E5%AE%99%E6%98%9F%E7%A9%BA.html"
 };
 
 // 绑定按钮点击事件
