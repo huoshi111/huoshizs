@@ -7,6 +7,7 @@
             height: 100vh;
             background-color: #292929;
             overflow: hidden; /* 禁止页面滚动 */
+            -webkit-overflow-scrolling: touch; /* 让滚动更顺滑 */
         }
         .chat-container {
             width: 90%;
