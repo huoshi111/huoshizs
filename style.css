@@ -422,4 +422,56 @@ iframe {
     max-height: 100%;       /* 最大高度限制 */
     min-height: 100%;       /* 最小高度保证 */
     border-radius: 12px;     /* 更圆润的边框 */
+    background-color: rgba(22, 22, 22, 0.704);
+}
+
+
+/*时间*/
+#huoshitimeshijian-container {
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(5, 5, 30, 0.571);
+    box-shadow: 0 0 30px rgba(0, 150, 255, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    width: 60%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#huoshitimeshijian-time-container {
+    position: relative;
+    text-align: center;
+    perspective: 1000px;
+    width: 100%;
+}
+
+#huoshitimeshijian-time-text {
+    font-size: 4vw;
+    color: #00ffead8;
+    text-shadow: 0 0 15px rgba(0, 255, 234, 0.5),
+                 0 0 30px rgba(0, 255, 234, 0.3),
+                 0 0 45px rgba(0, 255, 234, 0.2);
+    letter-spacing: 0.1em;
+    animation: glow 2s ease-in-out infinite alternate;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+#huoshitimeshijian-date-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2vw;
+    color: #6e6ed5cb;
+    margin-top: 1rem;
+    text-shadow: 0 0 10px rgba(125, 125, 255, 0.3);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
 }
