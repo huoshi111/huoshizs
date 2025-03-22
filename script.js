@@ -441,3 +441,32 @@ function toggleVoiceInput() {
 
 
 // genshin 原神
+
+// 时间
+
+function updateTime() {
+    const now = new Date();
+    const timeElement = document.getElementById('huoshitimeshijian-time-text');
+    const dateElement = document.getElementById('huoshitimeshijian-date-text');
+    
+    const timeString = now.toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    }).replace(/:/g, '<span class="colon">:</span>');
+    
+    const dateString = now.toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    }).toUpperCase();
+
+    timeElement.innerHTML = timeString;
+    dateElement.textContent = dateString;
+}
+
+// 初始化
+setInterval(updateTime, 1000);
+updateTime();
