@@ -15,7 +15,8 @@ const iframeSources = {
     //火狮 宇宙星空
     huoshiaicYuanshenOpenButton7: "https://huoshi111.github.io/huoshistarskyhs11/%E7%81%AB%E7%8B%AE%20%E5%AE%87%E5%AE%99%E6%98%9F%E7%A9%BA.html",
 
-    huoshiaicYuanshenOpenButton8: "https://huoshi111.github.io/huoshihuihuaai/%E7%81%AB%E7%8B%AE%E7%BB%98%E7%94%BB%E7%94%9F%E6%88%90.html"
+    huoshiaicYuanshenOpenButton8: "https://huoshi111.github.io/huoshihuihuaai/%E7%81%AB%E7%8B%AE%E7%BB%98%E7%94%BB%E7%94%9F%E6%88%90.html",
+    huoshiaicYuanshenOpenButton9: "https://huoshi111.github.io/huoshianimestyleai/%E7%81%AB%E7%8B%AE%E5%8A%A8%E6%BC%AB%E7%94%9F%E6%88%90.html"
 };
 
 // 绑定按钮点击事件
