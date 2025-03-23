@@ -101,7 +101,7 @@
                     enableInputAndButton(); // 启用输入框和发送按钮
                 }
                 scrollToBottom();
-            }, 18);
+            }, 12);
         }, 5000);
     }
     
@@ -141,7 +141,7 @@
       const aiMessage = document.querySelector(".ai-message:last-child");
       if (!aiMessage) return;
   
-      const text = aiMessage.textContent.replace("火狮智能助手：", "").trim();
+      const text = aiMessage.textContent.replace("火狮助手：", "").trim();
       if (!text) return;
 
   
@@ -219,15 +219,15 @@ function sendMessage() {
   // **优先检查关键词匹配**
   const keywordResponse = checkKeywordMatch(message);
   if (keywordResponse) {
-      typeMessage("火狮智能助手", keywordResponse, "ai-message");
+      typeMessage("火狮助手", keywordResponse, "ai-message");
   } else if (isMathExpression(message)) {
       // **如果关键词匹配失败，再检查是否为数学表达式**
       const result = calculateMath(message);
-      typeMessage("火狮智能助手", result.toString(), "ai-message");
+      typeMessage("火狮助手", result.toString(), "ai-message");
   } else {
       // **如果都不是，使用默认的关键词回复**
       let response = getResponse(message);
-      typeMessage("火狮智能助手", response, "ai-message");
+      typeMessage("火狮助手", response, "ai-message");
   }
 
   userInput.value = ""; // 清空输入框
@@ -299,7 +299,7 @@ function sendMessage() {
     // 开启搜索功能
     if (message === "开启搜索功能") {
         searchEnabled = true;
-        typeMessage("火狮智能助手", "搜索功能已开启，请输入搜索内容。___________________________________________________________________提示：如果您要关闭搜索功能可以直接输入 关闭搜索功能", "ai-message");
+        typeMessage("火狮助手", "搜索功能已开启，请输入搜索内容。 ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴  ￴￴ ￴ ￴￴ ￴ ￴ ￴￴￴ ￴￴ ￴ ￴￴ ￴ ￴ ￴ ￴ 提示：如果您要关闭搜索功能可以直接输入 关闭搜索功能", "ai-message");
         userInput.value = "";
         return;
     }
@@ -311,14 +311,14 @@ function sendMessage() {
             searchFrame.remove(); // 移除嵌入的 Bing 结果
             searchFrame = null;
         }
-        typeMessage("火狮智能助手", "搜索功能已关闭，恢复聊天模式。", "ai-message");
+        typeMessage("火狮助手", "搜索功能已关闭，恢复聊天模式。", "ai-message");
         userInput.value = "";
         return;
     }
 
     // 在搜索模式下进行搜索
     if (searchEnabled) {
-        typeMessage("火狮智能助手", "正在搜索，请稍候...  以下是搜索结果", "ai-message");
+        typeMessage("火狮助手", "正在搜索，请稍候...  以下是搜索结果", "ai-message");
 
         // 删除之前的搜索窗口
         if (searchFrame) {
@@ -349,13 +349,13 @@ function sendMessage() {
     // **其他正常聊天逻辑**
     const keywordResponse = checkKeywordMatch(message);
     if (keywordResponse) {
-        typeMessage("火狮智能助手", keywordResponse, "ai-message");
+        typeMessage("火狮助手", keywordResponse, "ai-message");
     } else if (isMathExpression(message)) {
         const result = calculateMath(message);
-        typeMessage("火狮智能助手", result.toString(), "ai-message");
+        typeMessage("火狮助手", result.toString(), "ai-message");
     } else {
         let response = getResponse(message);
-        typeMessage("火狮智能助手", response, "ai-message");
+        typeMessage("火狮助手", response, "ai-message");
     }
 
     userInput.value = "";
